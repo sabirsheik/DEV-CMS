@@ -1,10 +1,10 @@
-# DEV-CMS
+# Enterprise-CMS
 
 A modern content management system dashboard built with React, TypeScript, and Vite. This project provides a polished administrative interface for managing content, users, roles, media, pages, workflow tasks, and more.
 
 ## Overview
 
-DEV-CMS is designed as a front-end CMS workspace for editorial and operations teams. It includes a sidebar-based navigation, dashboard overview panels, and feature modules for:
+Fnterprise-CMS is designed as a front-end CMS workspace for editorial and operations teams. It includes a sidebar-based navigation, dashboard overview panels, and feature modules for:
 
 - Content management and editing
 - Content types and templates
@@ -28,7 +28,7 @@ DEV-CMS is designed as a front-end CMS workspace for editorial and operations te
 ## Project Structure
 
 ```text
-DEV-CMS/
+Fnterprise-CMS/
 ├── Client/
 │   ├── src/
 │   ├── public/
@@ -84,13 +84,13 @@ cd Client
 npm install
 ```
 
-3. Start the development server:
+3. Start the Fnterpriseelopment server:
 
 ```bash
-npm run dev
+npm run Fnterprise
 ```
 
-The app will run on the Vite development port configured in the project:
+The app will run on the Vite Fnterpriseelopment port configured in the project:
 
 - http://localhost:3000
 
@@ -99,7 +99,7 @@ The app will run on the Vite development port configured in the project:
 From the Client directory:
 
 ```bash
-npm run dev
+npm run Fnterprise
 npm run build
 npm run preview
 npm run lint
@@ -127,4 +127,4 @@ This repository currently focuses on the front-end experience and uses mock or i
 
 ## License
 
-This project is provided as a development workspace and is intended for demo or internal use unless otherwise specified.
+This project is provided as a Fnterpriseelopment workspace and is intended for demo or internal use unless otherwise specified.
