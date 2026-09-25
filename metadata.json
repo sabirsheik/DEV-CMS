@@ -1,0 +1,8 @@
+{
+  "name": "Remix Dev CMS",
+  "description": "Production-grade enterprise content management platform with multi-channel publishing, structured content modeling, editorial workflows, revision history, and role-based access control.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
