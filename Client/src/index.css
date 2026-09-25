@@ -1,0 +1,157 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* ==========================================================
+   THEME DESIGN TOKENS
+   - 'teal' (Verdant Obsidian): Deep petrol dark, emerald mint accent (Default)
+   - 'cobalt' (Midnight Cobalt): Deep space navy, electric azure accent
+   - 'copper' (Warm Copper): Titanium slate, editorial amber-bronze accent
+   - 'light' (Swiss Studio): Pure high-contrast daylight editorial mode
+   ========================================================== */
+
+:root, [data-theme="teal"] {
+  --bg-app: #070d14;
+  --bg-sidebar: #04080e;
+  --bg-topbar: rgba(7, 13, 20, 0.92);
+  --bg-card: #0d1724;
+  --bg-card-hover: #122033;
+  --bg-card-subtle: #09121d;
+  --bg-elevated: #15253b;
+  --bg-input: #08101a;
+  
+  --border-main: rgba(30, 48, 73, 0.85);
+  --border-subtle: rgba(20, 33, 50, 0.7);
+  --border-highlight: rgba(45, 75, 112, 0.8);
+
+  --brand-primary: #0d9488;
+  --brand-primary-hover: #0f766e;
+  --brand-accent: #14b8a6;
+  --brand-text: #2dd4bf;
+  --brand-tint: rgba(13, 148, 136, 0.14);
+  --brand-ring: rgba(20, 184, 166, 0.4);
+  --brand-border: rgba(20, 184, 166, 0.35);
+
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+
+  --ambient-glow: radial-gradient(1200px 500px at 50% 0px, rgba(13, 148, 136, 0.14), transparent 75%);
+}
+
+[data-theme="cobalt"] {
+  --bg-app: #060a14;
+  --bg-sidebar: #04060e;
+  --bg-topbar: rgba(6, 10, 20, 0.92);
+  --bg-card: #0b1426;
+  --bg-card-hover: #101c36;
+  --bg-card-subtle: #080e1c;
+  --bg-elevated: #152445;
+  --bg-input: #070c18;
+
+  --border-main: rgba(30, 49, 86, 0.85);
+  --border-subtle: rgba(20, 33, 58, 0.7);
+  --border-highlight: rgba(48, 77, 133, 0.8);
+
+  --brand-primary: #2563eb;
+  --brand-primary-hover: #1d4ed8;
+  --brand-accent: #38bdf8;
+  --brand-text: #60a5fa;
+  --brand-tint: rgba(37, 99, 235, 0.14);
+  --brand-ring: rgba(56, 189, 248, 0.4);
+  --brand-border: rgba(56, 189, 248, 0.35);
+
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+
+  --ambient-glow: radial-gradient(1200px 500px at 50% 0px, rgba(37, 99, 235, 0.15), transparent 75%);
+}
+
+[data-theme="copper"] {
+  --bg-app: #0d0e12;
+  --bg-sidebar: #08090c;
+  --bg-topbar: rgba(13, 14, 18, 0.92);
+  --bg-card: #15161e;
+  --bg-card-hover: #1d1e28;
+  --bg-card-subtle: #0f1015;
+  --bg-elevated: #242533;
+  --bg-input: #101116;
+
+  --border-main: rgba(46, 48, 66, 0.85);
+  --border-subtle: rgba(32, 33, 46, 0.7);
+  --border-highlight: rgba(70, 72, 98, 0.8);
+
+  --brand-primary: #d97706;
+  --brand-primary-hover: #b45309;
+  --brand-accent: #f59e0b;
+  --brand-text: #fbbf24;
+  --brand-tint: rgba(217, 119, 6, 0.14);
+  --brand-ring: rgba(245, 158, 11, 0.4);
+  --brand-border: rgba(245, 158, 11, 0.35);
+
+  --text-primary: #fafafa;
+  --text-secondary: #a1a1aa;
+  --text-muted: #71717a;
+
+  --ambient-glow: radial-gradient(1200px 500px at 50% 0px, rgba(217, 119, 6, 0.13), transparent 75%);
+}
+
+[data-theme="light"] {
+  --bg-app: #f8fafc;
+  --bg-sidebar: #ffffff;
+  --bg-topbar: rgba(255, 255, 255, 0.94);
+  --bg-card: #ffffff;
+  --bg-card-hover: #f1f5f9;
+  --bg-card-subtle: #f8fafc;
+  --bg-elevated: #f1f5f9;
+  --bg-input: #ffffff;
+
+  --border-main: #e2e8f0;
+  --border-subtle: #edf2f7;
+  --border-highlight: #cbd5e1;
+
+  --brand-primary: #0f766e;
+  --brand-primary-hover: #115e59;
+  --brand-accent: #0d9488;
+  --brand-text: #0f766e;
+  --brand-tint: rgba(15, 118, 110, 0.08);
+  --brand-ring: rgba(15, 118, 110, 0.35);
+  --brand-border: rgba(15, 118, 110, 0.3);
+
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+
+  --ambient-glow: none;
+}
+
+/* Custom crisp scrollbars for enterprise data tables and editor panes */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.2);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.35);
+}
